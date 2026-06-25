@@ -2,7 +2,7 @@
 
 A small, automated pipeline for screening multiple ligands against a
 single protein receptor using AutoDock Vina. Built while learning
-molecular docking from scratch — it chains together the steps that
+molecular docking from scratch. It chains together the steps that
 are normally run one at a time by hand.
 
 ## What it does
@@ -44,8 +44,8 @@ python parse_results.py
 
 ## Example output
 
-Run against T4 lysozyme L99A (PDB 181L) as a validation system —
-benzene is the ligand resolved in the crystal structure, used here as
+Run against T4 lysozyme L99A (PDB 181L) as a validation system.
+Benzene is the ligand resolved in the crystal structure, used here as
 a sanity check that the pipeline reproduces a known pose before
 trusting it on anything else:
 
