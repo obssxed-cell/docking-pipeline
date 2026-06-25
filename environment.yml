@@ -1,0 +1,12 @@
+name: docking
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - vina
+  - pdb2pqr
+  - openbabel
+  - meeko
+  - gemmi
+  - prody
