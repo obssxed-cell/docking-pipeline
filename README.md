@@ -64,12 +64,12 @@ ligands.
 ## Notes
 
 - The grid box (`CENTER_X/Y/Z`, `SIZE_X/Y/Z`) is specific to the
-  binding site you're targeting — recompute it for your own receptor
-  rather than reusing the example values.
+  binding site you're targeting so I recommend you recompute it for your own receptor
+  rather than reusing the example values I provided.
 - The exact `pdb2pqr30` / `mk_prepare_receptor.py` flags in `dock.sh`
   may need small adjustments depending on your installed tool
   versions.
-- `dock.sh` skips (rather than aborts on) a missing or failing
+- `dock.sh` skips on a missing or failing
   ligand, so one bad input doesn't kill an entire screening run.
 
 ## Dependencies
@@ -78,5 +78,5 @@ ligands.
 - [Meeko](https://github.com/forlilab/Meeko)
 - [PDB2PQR](https://github.com/Electrostatics/pdb2pqr)
 - [OpenBabel](https://github.com/openbabel/openbabel)
-- [PyMOL](https://pymol.org/) (for pose visualization/validation, not
+- [PyMOL](https://pymol.org/) (for pose visualization purposes only, not
   part of the automated script)
