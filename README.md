@@ -13,14 +13,16 @@ raw input files  →  prepare & protonate  →  dock  →  analyze results
                          pH 7.4)              scoring)    of affinities)
 ```
 
-1. **Receptor prep** — protonates the receptor at a specified pH
-   (PDB2PQR/PROPKA), then converts it to the `.pdbqt` format Vina
+1. **Receptor prep**: protonates the receptor at a specified pH
+   (PDB2PQR/PROPKA)
+     then converts it to the `.pdbqt` format Vina
    requires (Meeko).
-2. **Ligand prep** — converts each ligand from `.sdf` to `.pdbqt`
-   (Meeko), looping over a list of ligands.
-3. **Docking** — runs AutoDock Vina for each prepared ligand against
+4. **Ligand prep**: converts each ligand from `.sdf` to `.pdbqt`
+   (Meeko)
+     looping over a list of ligands.
+6. **Docking**: runs AutoDock Vina for each prepared ligand against
    the prepared receptor, using a defined grid box.
-4. **Results** — `parse_results.py` reads Vina's log files and builds
+7. **Results**: `parse_results.py` reads Vina's log files and builds
    a ranked markdown table of best-scoring (mode 1) binding
    affinities.
 
